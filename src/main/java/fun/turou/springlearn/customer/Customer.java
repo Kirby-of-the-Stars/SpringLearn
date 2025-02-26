@@ -3,7 +3,7 @@ package fun.turou.springlearn.customer;
 import lombok.Getter;
 
 @Getter
-class Customer {
+public class Customer {
     private final int id;
     private final String name;
 

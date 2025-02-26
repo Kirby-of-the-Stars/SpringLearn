@@ -4,10 +4,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
-public class CustomerRepository implements CustomerRepo {
+@Component(value = "fake")
+public class CustomerRepositoryFake implements CustomerRepo{
     @Override
     public List<Customer> getCustomers() {
-        return List.of();
+        return List.of(new Customer(1, "John Doe"));
     }
 }
